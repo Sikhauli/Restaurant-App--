@@ -58,27 +58,20 @@ const SignUp = ({navigation}) => {
   return (
     
     <View style={styles.container}>
-        <Header title='Register' />
+{/*         <Header title='Register' /> */}
         {errMsg !== '' ? (<View><Text style={styles.badErr}>{errMsg}</Text></View>) : (<View><Text style={styles.goodErr}></Text></View>) }
-        <View>
-            <View>
-                <Text>Email</Text>
-                <TextInput onChangeText={value => setEmail(value)} />
-            </View>
+        <View style={styles.top}>
 
-            <View>
-                <Text>Password:</Text>
-                <TextInput onChangeText={value => setPassword(value)} />
-            </View>
+                <TextInput style={styles.input} onChangeText={value => setEmail(value)}  placeholder="Enter Email"/>
 
+                <TextInput style={styles.input} onChangeText={value => setPassword(value)} placeholder="Enter Password" />
+
+                <TextInput style={styles.input} onChangeText={value => setConfirmPassword(value)} placeholder="Confirm Password" />
+
+            <Button style={styles.reg} title='Register' onPress={registerWithEmail} />
             <View>
-                <Text>Confirm Password:</Text>
-                <TextInput onChangeText={value => setConfirmPassword(value)} />
-            </View>
-            <Button title='Register' onPress={registerWithEmail} />
-            <View>
-                <Text>Already have an account?</Text>
-                <Button title='Login' onPress={() => navigation.navigate('Login')} />
+                <Text style={styles.toReg}>Already Have An Account?</Text>
+                <Button style={styles.reg} title='Login' onPress={() => navigation.navigate('Login')} />
             </View>
 
         </View>
@@ -89,12 +82,42 @@ const SignUp = ({navigation}) => {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 15,
+//         padding: 15,
     },
     badErr: {
         backgroundColor: '#ff0000',
         color: '#ffffff',
     },
+    reg: {
+            flex: 1,
+            width: '35%',
+            marginLeft: '25vw'
+        },
+        input: {
+            width: '90vw',
+            borderColor: 'gray',
+            height: 50,
+            marginLeft: '5vw',
+            borderWidth: 2,
+            marginBottom: 25,
+            borderRadius: 15,
+
+        },
+        top: {
+            marginTop: '20vh'
+        },
+        toReg:{
+            marginLeft: '25vw'
+        },
+        forgot:{
+
+            marginLeft: '53vw',
+            marginBottom: 25,
+            // marginBottom: '10vh'
+        },
+        top: {
+            marginTop: '20vh'
+              },
 })
 
 export default SignUp

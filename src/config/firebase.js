@@ -4,13 +4,14 @@ import {getAuth} from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAIyuyVXZ0ROPS5B2e4Rb_dhuiVwizJ8dY",
-  authDomain: "paulrestuarant.firebaseapp.com",
-  projectId: "paulrestuarant",
-  storageBucket: "paulrestuarant.appspot.com",
-  messagingSenderId: "189856007739",
-  appId: "1:189856007739:web:2cd5b6e9d1f31c5c40be1e",
-  measurementId: "G-1ML8RDLPBL"
+    apiKey: "AIzaSyCitb28dUhr8XVK9bFWJP0_SVUrchY5dxY",
+    authDomain: "restaurant-fabfa.firebaseapp.com",
+    projectId: "restaurant-fabfa",
+    storageBucket: "restaurant-fabfa.appspot.com",
+    messagingSenderId: "711631545994",
+    appId: "1:711631545994:web:3a17bd1bab10a46d19ef73",
+    measurementId: "G-F043L2R0KD"
+
 };
 
 const app = initializeApp(firebaseConfig);
