@@ -4,9 +4,10 @@ import Header from './Header';
 import { auth } from '../config/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import {ScrollView} from 'react-native-web';
+
+
 const Login = ({navigation}) => {
    
-
     //states
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -42,7 +43,6 @@ const Login = ({navigation}) => {
     }
   return (
     <View style={styles.container}>
-  {/* <Header title='Login' /> */}
         <View>
             {errMsg === '' ? (<Text style={styles.goodErr}></Text>) : (<Text style={styles.badErr}>{errMsg}</Text>)}
         </View>
@@ -56,8 +56,6 @@ const Login = ({navigation}) => {
                 <Text style={styles.toReg}>Don't have an account?</Text>
 
                 <Button style={styles.reg} title='SignUp' onPress={() => navigation.navigate('SignUp')} />
-   
-           
         </View>
  
   )
@@ -126,4 +124,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Login
+export default Login;
