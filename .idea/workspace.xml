@@ -9,29 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/Data/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Data/Drinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Drinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/cosmopolitan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/daiquiri.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/dark-n-stormy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/french-75.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/gimlet.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/manhattan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/margarita.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/martinez.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/martini.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/milano-spritzer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mimosa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mint-julep.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/mojito.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/moscow-mule.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/negroni.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/old-fashioned.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/paloma.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/pimms-cup.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/sazerac.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/sidecar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/tc-classic-tomcollins.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/tc-classic-vesper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/whiskey-sour.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,7 +5,7 @@ export const Drinks = [
                       "title":"Cosmopolitan",
                       "category":"breakfast",
                       "price":45.99,
-                      "img":"../images/drink/Cosmopolitan-1.jpg",
+                      "img":"../images/drinks/Cosmopolitan-1.jpg",
                       "desc":"`I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `"
                    },
                    {
@@ -13,7 +13,7 @@ export const Drinks = [
                       "title":"Daiquiri",
                       "category":"lunch",
                       "price":33.99,
-                      "img":"../images/drink/daiquiri.jpg",
+                      "img":"../images/drinks/daiquiri.jpg",
                       "desc":"`vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `"
                    },
                    {
@@ -21,7 +21,7 @@ export const Drinks = [
                       "title":"Godzilla Milkshake",
                       "category":"shakes",
                       "price":36.99,
-                      "img":"../images/drink/dark-n-stormy.jpg",
+                      "img":"../images/drinks/dark-n-stormy.jpg",
                       "desc":"`ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`"
                    },
                    {
@@ -29,7 +29,7 @@ export const Drinks = [
                       "title":"French 75",
                       "category":"breakfast",
                       "price":40.99,
-                      "img":"../images/drink/french-75.jpg",
+                      "img":"../images/drinks/french-75.jpg",
                       "desc":"`Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `"
                    },
                    {
@@ -37,7 +37,7 @@ export const Drinks = [
                       "title":"Gimlet",
                       "category":"lunch",
                       "price":72.99,
-                      "img":"../images/drink/gimlet.jpg",
+                      "img":"../images/drinks/gimlet.jpg",
                       "desc":"`franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `"
                    },
                    {
@@ -45,7 +45,7 @@ export const Drinks = [
                       "title":"Manhattan",
                       "category":"shakes",
                       "price":108.99,
-                      "img":"../images/drink/manhattan.jpg",
+                      "img":"../images/drinks/manhattan.jpg",
                       "desc":"`Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`"
                    },
                    {
@@ -53,7 +53,7 @@ export const Drinks = [
                       "title":"Margarita",
                       "category":"breakfast",
                       "price":82.99,
-                      "img":"../images/drink/margarita.jpg",
+                      "img":"../images/drinks/margarita.jpg",
                       "desc":"`carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `"
                    },
                    {
@@ -61,7 +61,7 @@ export const Drinks = [
                       "title":"Martinez",
                       "category":"lunch",
                       "price":42.99,
-                      "img":"../images/drink/martinez.jpg",
+                      "img":"../images/drinks/martinez.jpg",
                       "desc":"`on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `"
                    },
                    {
@@ -69,7 +69,7 @@ export const Drinks = [
                       "title":"Martini",
                       "category":"shakes",
                       "price":36.99,
-                      "img":"../images/drink/martini.jpg",
+                      "img":"../images/drinks/martini.jpg",
                       "desc":"`skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`"
                    },
 //                   {
