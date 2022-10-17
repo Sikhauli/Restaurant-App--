@@ -26,15 +26,17 @@ const Home = () => {
                 <Image style={styles.gates1} source={require('../../assets/desert.jpg')} />
             </View>
             </View>
-            <View numColumns={3} style={styles.subContainer}>
+            <View style={styles.subContainer}>
 
                   {Data.map((data, key) => {
                      return <View style={styles.food} key={key}>
+                        <Text style={styles.textJS}>{data.title}</Text>
+                        <Image style={styles.imageJS} source={{uri: data.img}} key={key} source={data.img} />
+                        <Text style={styles.textJS}>{data.price}</Text>
 
-{/*                      <Text style={styles.textJS}>{data.title}</Text> */}
-                        <Text style={{ color:'white', borderRadius:20, paddingRight: 5, flexGrow:1}}>{data.title}</Text>
 
-                     </View>;
+
+                          </View>;
                    })}
 
             </View>
@@ -110,11 +112,25 @@ const styles = StyleSheet.create({
     marginLeft: '1vw',
     height: '20vh',
     textAlign: 'center',
-    backgroundColor:'green'
+    borderWidth: 1,
+    borderColor: 'grey',
 
+    },
 
+    textJS:{
+
+     color:'white',
+     flexGrow:1
+
+    },
+
+    imageJS:{
+
+    height: '12vh',
+    width: '20vw'
 
     }
+
 });
 
 export default Home;
