@@ -36,29 +36,29 @@ const Home = () => {
         <View style={styles.container}>
             <Text style = {styles.head} > Food Categories </Text>
            <View style = {styles.imageNav}>
-            <TouchableOpacity style={styles.button} onPress={setPage('Meals')} >
+{/*             <TouchableOpacity style={styles.button} onPress={setPage('Meals')} > */}
             <View>
                 {/* Entering data for ,meals */}
                 <Text style= {styles.textCat}>Meals</Text>
                 <Image style={styles.gates} source={require('../../assets/meal.jpeg')} />
             </View>
-            </TouchableOpacity>
+{/*             </TouchableOpacity> */}
 
-            <TouchableOpacity style={styles.button} onPress={setPage('Drinks')} >
+{/*             <TouchableOpacity style={styles.button} onPress={setPage('Drinks')} > */}
             <View>
                 {/* Entering data for drinks */}
                 <Text style= {styles.textCat}>Drinks</Text>
                 <Image style={styles.gates} source={require('../../assets/drinks.jpg')} />
             </View>
-            </TouchableOpacity>
+{/*             </TouchableOpacity> */}
 
-            <TouchableOpacity style={styles.button} onPress={setPage('Deserts')} >
+{/*             <TouchableOpacity style={styles.button} onPress={setPage('Deserts')} > */}
             <View>
                 {/* Entering data for deserts */}
                 <Text style= {styles.textCat}>Deserts</Text>
                 <Image style={styles.gates1} source={require('../../assets/desert.jpg')} />
             </View>
-            </TouchableOpacity>
+{/*             </TouchableOpacity> */}
             </View>
             <View style={styles.subContainer}>
 
