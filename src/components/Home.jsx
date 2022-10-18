@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component, useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Button } from 'react-native';
 import { Data } from '../Data/Data';
 import {Drinks} from '../Data/Drinks';
 import {Meal} from '../Data/Meal';
@@ -9,6 +9,9 @@ import {Meal} from '../Data/Meal';
 const Home = () => {
 
 
+
+
+  const [checked, setChecked] = React.useState('first');
  const [ Page, setPage ] = useState(null);
 //    const [count, setCount] = useState(0);
 
@@ -36,37 +39,35 @@ const Home = () => {
         <View style={styles.container}>
             <Text style = {styles.head} > Food Categories </Text>
            <View style = {styles.imageNav}>
-{/*             <TouchableOpacity style={styles.button} onPress={setPage('Meals')} > */}
-            <View>
-                {/* Entering data for ,meals */}
+
+            <TouchableOpacity style={styles.button}  >
                 <Text style= {styles.textCat}>Meals</Text>
-                <Image style={styles.gates} source={require('../../assets/meal.jpeg')} />
-            </View>
-{/*             </TouchableOpacity> */}
+            </TouchableOpacity>
 
-{/*             <TouchableOpacity style={styles.button} onPress={setPage('Drinks')} > */}
-            <View>
-                {/* Entering data for drinks */}
+            <TouchableOpacity style={styles.button} /*onPress={}*/ >
                 <Text style= {styles.textCat}>Drinks</Text>
-                <Image style={styles.gates} source={require('../../assets/drinks.jpg')} />
-            </View>
-{/*             </TouchableOpacity> */}
+            </TouchableOpacity>
 
-{/*             <TouchableOpacity style={styles.button} onPress={setPage('Deserts')} > */}
-            <View>
-                {/* Entering data for deserts */}
+            <TouchableOpacity style={styles.button}  >
                 <Text style= {styles.textCat}>Deserts</Text>
-                <Image style={styles.gates1} source={require('../../assets/desert.jpg')} />
+            </TouchableOpacity>
+
             </View>
-{/*             </TouchableOpacity> */}
-            </View>
+
+
             <View style={styles.subContainer}>
 
                   {Data.map((data, key) => {
                      return <View style={styles.food} key={key}>
+
                         <Text style={styles.textJS}>{data.title}</Text>
                         <Image source={data.img} style = {styles.imageJS} key={data.id}/>
                         <Text style={styles.textJS}>{data.price}</Text>
+                        <Button
+//                           onPress={onPressLearnMore}
+                          title="Add To Cart"
+                          color="#cccccc"
+                          accessibilityLabel="Learn more about this purple button"/>
                    </View>;
                    })}
 
@@ -83,7 +84,7 @@ const Home = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-//         justifyContent: 'center',
+        justifyContent: 'center',
         alignItems: 'center',
         display: 'flex',
     },
@@ -122,25 +123,29 @@ const styles = StyleSheet.create({
 
     },
     textCat:{
-       textAlign: 'center'
+       textAlign: 'center',
+       justifyContent: 'center',
+        marginTop: '.8vh'
     },
+
     subContainer:{
 
     height: '60vh',
     width: '100vw',
-//     backgroundColor: 'pink',
     flexDirection: 'row',
     alignItems: 'center',
     flex: 1,
+//     borderWidth: 1,
+    marginTop: '-9vh',
+    marginBottom: '10vh',
     flexWrap: 'wrap'
-
 
     },
     food:{
 
     width: '32vw',
     marginLeft: '1vw',
-    height: '20vh',
+    height: '21vh',
     textAlign: 'center',
     borderWidth: 1,
     borderColor: 'grey',
@@ -159,6 +164,16 @@ const styles = StyleSheet.create({
 
     height: '12vh',
     width: '30vw'
+
+    },
+    button:{
+
+    height: '4vh',
+    width: '33vw',
+    borderColor: 'grey',
+    borderWidth: 1,
+    marginLeft: '.1vw'
+
 
     }
 

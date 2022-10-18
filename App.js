@@ -10,6 +10,9 @@ import Home from './src/components/Home';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+
+
+
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
