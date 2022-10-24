@@ -5,13 +5,9 @@ import Login from './src/components/login';
 import SignUp from './src/components/signup';
 import Home from './src/components/Home';
 
-
-
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-
-
 
   return (
     <NavigationContainer>

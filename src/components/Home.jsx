@@ -1,5 +1,6 @@
 //import liraries
 import React, { Component, useState } from 'react';
+// import { Icon } from "@rneui/themed";
 import { View, Text, StyleSheet, Image, TouchableOpacity, Button } from 'react-native';
 import { Data } from '../Data/Data';
 import {Drinks} from '../Data/Drinks';
@@ -8,35 +9,23 @@ import {Meal} from '../Data/Meal';
 
 const Home = () => {
 
+  const [itemCount, setItemCount] = React.useState(0);
 
+   console.log(itemCount);
 
+    const addToCart = () =>{
 
-  const [checked, setChecked] = React.useState('first');
- const [ Page, setPage ] = useState(null);
-//    const [count, setCount] = useState(0);
+    setItemCount(itemCount +1)
 
-//         console.log(Data.img);
-//         console.log(Drinks.img);
-//         console.log(Meal.img);
-        console.log(Page)
-
-        const onPress = () =>{
-
-          if(Page === "Meals"){
-            console.log(Page)
-          }else if(Page === "Drinks"){
-            console.log(Page)
-           }
-           else{
-           console.log(Page)
-           }
-
-        }
+    }
 
 
     return (
     <>
         <View style={styles.container}>
+            <Image  />
+{/*             <Icon name='rowing' />
+            <Icon name='g-translate' color='#00aced' /> */}
             <Text style = {styles.head} > Food Categories </Text>
            <View style = {styles.imageNav}>
 
@@ -64,7 +53,7 @@ const Home = () => {
                         <Image source={data.img} style = {styles.imageJS} key={data.id}/>
                         <Text style={styles.textJS}>{data.price}</Text>
                         <Button
-//                           onPress={onPressLearnMore}
+                          onPress={ addToCart }
                           title="Add To Cart"
                           color="#cccccc"
                           accessibilityLabel="Learn more about this purple button"/>
@@ -111,7 +100,7 @@ const styles = StyleSheet.create({
       height: '5vh',
       width: '100vw',
       textAlign: 'center',
-//       backgroundColor: 'yellow',
+      backgroundColor: 'yellow',
 
     },
     imageNav: {
@@ -172,7 +161,8 @@ const styles = StyleSheet.create({
     width: '33vw',
     borderColor: 'grey',
     borderWidth: 1,
-    marginLeft: '.1vw'
+    marginLeft: '.1vw',
+    backgroundColor: '#cccccc'
 
 
     }

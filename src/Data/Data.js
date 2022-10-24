@@ -82,3 +82,6 @@ export const Data = [
              ]
 
 
+export function getProduct(id) {
+    return Data.find((product) => (product.id == id));
+}
